@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 2rem;
+}
+
+/* STYLING MAIN */
+main {
+  padding: 2rem;
+}
+
+#container_with_actors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.img_div {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  height: 14rem;
+  width: 10rem;
+  background-color: #666;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.image:hover {
+  background-color: darkseagreen;
+}
+
+h1,
+h2,
+.fullname,
+.movie {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+}
+
+#container_with_actors article {
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
+/******** POPUP STARTS ********/
+#popup {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000099;
+  position: fixed;
+  top: 0;
+  padding: 2rem;
+  display: none;
+}
+
+#popup article {
+  background-color: white;
+  padding: 5rem;
+}
+
+#popup img {
+  max-width: 450px;
+}
+/******** POPUP END ********/
